@@ -1,0 +1,9 @@
+{
+  "name": "moiHelp",
+  "version": "0.0.1",
+  "description": "Helpers Used in DEVMOI Projects",
+  "main": "index.js",
+  "repository": "https://github.com/DEVMOI/moiHelp.git",
+  "author": "Warren Gates <wcgate01@louisville.edu>",
+  "license": "MIT"
+}
