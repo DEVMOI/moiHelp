@@ -1,9 +1,9 @@
-# moiHelp
+# moihelp
 > Helpers Used in DEVMOI Projects
 
 Helper:
 ```
- // General Storage
+ // General Helpers
  toCapitalize(str)
  copyToClipboard(str)
  parseDate(date,seperator)
