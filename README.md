@@ -6,7 +6,13 @@ Helper:
  // General Helpers
  toCapitalize(str)
  copyToClipboard(str)
+ CSVtoJSON(data,delimiter)
+ JSONtoCSV(arr,columns,delimiter)
+ //Array Helper
+ remove(arr,callback)
+ // Date Helper
  parseDate(date,seperator)
+ // Validators
  isJson(str)
  isEven(int)
  // Local Storage
@@ -14,4 +20,7 @@ Helper:
  getStorage(key)
  removeStorage(key)
  clearStorage(key)
+ // Cryto Helpers
+ hash(str)
+ hashNode(val)
 ```
