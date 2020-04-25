@@ -1,6 +1,14 @@
 # moihelp
 > Helpers Used in DEVMOI Projects
 
+```
+npm i moihelp
+
+# or
+
+yarn add moihelp
+```
+
 Helper:
 ```
  // General Helpers
