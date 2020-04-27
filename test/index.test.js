@@ -1,5 +1,5 @@
 const moihelp = require("..");
-const { toCapitalize, JSONtoCSV, CSVToJSON } = moihelp;
+const { toCapitalize, JSONtoCSV, CSVToJSON, isJson,hashNode } = moihelp;
 
 describe("Testing for the npm package moihelp", () => {
   describe("General Helpers", () => {
@@ -75,7 +75,17 @@ describe("Testing for the npm package moihelp", () => {
     describe("parseDate", () => {});
   });
   describe("Validators", () => {
-    describe("isJson", () => {});
+    describe("isJson", () => {
+      it('should return false when passed a non Json String', () => {
+        expect(isJson('kappa')).toBe(false)
+      });
+      it("should return false when passed an Array", () => {
+        expect(isJson(["kappa"])).toBe(false);
+      });
+      it("should return true when passed an String containing an object", () => {
+        expect(isJson('[{ "id": "Open", "label": "" }]')).toBe(true);
+      });
+    });
     describe("isEven", () => {});
     describe("isWindow", () => {});
   });
@@ -87,6 +97,14 @@ describe("Testing for the npm package moihelp", () => {
   });
   describe("Crypto Helpers", () => {
     describe("hash", () => {});
-    describe("hashNode", () => {});
+    describe("hashNode", () => {
+      it("should hash a string", async () => {
+        const hash = await hashNode("test");
+        
+        expect(hash).toEqual(
+          "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        );
+      });     
+    });
   });
 });
