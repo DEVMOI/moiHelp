@@ -6,6 +6,9 @@
   "repository": "https://github.com/DEVMOI/moiHelp.git",
   "author": "Warren Gates <wcgate01@louisville.edu>",
   "license": "MIT",
+  "scripts": {
+    "dev":"jest --watch"
+  },
   "devDependencies": {
     "jest": "^25.4.0"
   }
