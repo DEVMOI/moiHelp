@@ -1,6 +1,6 @@
 {
   "name": "moihelp",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Helpers Used in DEVMOI Projects",
   "main": "index.js",
   "repository": "https://github.com/DEVMOI/moiHelp.git",
